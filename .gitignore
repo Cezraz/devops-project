@@ -11,3 +11,5 @@ Thumbs.db
 
 backup-*.txt
 /tmp/
+*.out
+/tmp/
