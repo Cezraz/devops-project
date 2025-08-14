@@ -1,7 +1,9 @@
 #!/bin/bash
 #Мониторинг
 
-URL="http://localhost:8000"
+URL=${1:-"http://localhost:8000"}
+
+echo "Проверяю $URL"
 
 if curl -f "$URL" > /dev/null 2>&1; then
 	echo "Сервер доступен"
